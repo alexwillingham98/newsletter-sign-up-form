@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Inter&display=swap" rel="stylesheet">
+  
+  <script src = 'script.js'></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    *{
+      padding: 0;
+        margin: 0;
+        box-sizing: border-box;}
+    
+    html {
+        background-color: rgb(61, 61, 98);
+      }
+      h1{
+        font-size: 50px;
+      }
+      ol{
+        list-style-image: url('./assets/images/icon-list.svg');
+        
+        
+      }
+      svg{
+        height: auto;
+        width:auto;
+      }
+      input{
+        width:75vh;
+        border-radius: 10px;
+        padding: 15px 25px;
+        
+       }
+       .flex-container{
+        max-width: fit-content;
+        display: flex;
+        flex-direction: row;
+        
+        
+        background-color: white;
+        font-family: "Inter", sans-serif;
+        border-radius: 25px;
+        margin: auto;
+        margin-top:5rem;
+      
+      }
+      .container-1{
+        padding:60px;
+        padding-top: 35px;
+      }
+      
+      button{
+        width:40vh;
+        
+        border-radius: 10px;
+        padding: 15px 25px;
+        cursor:pointer;
+        font-family: "Inter",sans-serif;
+        font-size: 15px;
+        background-color: rgb(3, 3, 49);
+        color:white;
+        transition-duration: 0.4s;
+        border:none;
+      }
+      button:hover{
+        background: linear-gradient(to left, #ff3300 0%, #ff0066 100%);
+        color:white;
+        box-shadow: 0 15px 25px rgba(50, 50, 50, 0.15);
+      }
+      
+  </style>
+</head>
+<body>
+
+  <!-- Sign-up form start -->
+<div class = "flex-container">
+  <div class="container-1">
+
+  <!-- Sign-up form end -->
+
+  <!-- Success message start -->
+  <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><defs><linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%"><stop offset="0%" stop-color="#FF6A3A"/><stop offset="100%" stop-color="#FF527B"/></linearGradient></defs><g fill="none"><circle cx="32" cy="32" r="32" fill="url(#a)"/><path stroke="#FFF" stroke-width="4" d="m18.286 34.686 8.334 7.98 19.094-18.285"/></g></svg>
+  <br>
+  <br>
+  <h1>Thanks for <br>subscribing!</h1>
+  <br>
+
+  A confirmation email has been sent to <br><b><p id="displayText"></p></b>
+  <script>displayThankYouMessage();</script>
+  Please open it and click <br>the button inside to confirm your subscription.
+  <br>
+  <br>
+  <button onclick="clickEvent()">Dismiss message</button>
+  <br>
+
+  <!-- Success message end -->
+  </div>
+  
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Alex Willingham</a>.
+  </div>
+</body>
+
+</html>

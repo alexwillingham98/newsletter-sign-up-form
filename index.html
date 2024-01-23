@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Inter&display=swap" rel="stylesheet">
+  <script src = 'script.js'></script>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    *{
+      padding: 0;
+        margin: 0;
+        box-sizing: border-box;}
+    
+    html {
+        background-color: rgb(61, 61, 98);
+        
+      }
+      
+      h1{
+        font-size: 50px;
+      }
+      ol{
+        list-style-image: url('./assets/images/icon-list.svg');
+        padding-left: 25px;
+        
+      }
+      ol li{
+        margin-bottom: 10px;
+      }
+      .image{
+        height: auto;
+        width:auto;
+        padding: 15px;
+      }
+      input{
+        width: 30rem;
+        border-radius: 10px;
+        padding: 15px 25px;
+        
+       }
+       .invalid-input{
+        border:1px solid red;
+        background-color: #f4efed;
+       }
+       .error-message{
+        text-align: right;
+        color:red;
+       }
+      .flex-container{
+        max-width: fit-content;
+        display: flex;
+        flex-direction: row;
+        margin:5px;
+        
+        background-color: white;
+        font-family: "Inter", sans-serif;
+        border-radius: 25px;
+        margin: auto;
+        margin-top:5rem;
+      
+      }
+      
+      
+      .container-1{
+        padding:75px;
+      }
+      button{
+        width: 30rem;
+        border-radius: 10px;
+        padding: 15px 25px;
+        cursor:pointer;
+        font-family: "Inter",sans-serif;
+        font-size: 25px;
+        background-color: rgb(3, 3, 49);
+        color:white;
+        transition-duration: 0.4s;
+        border:none;
+      }
+      button:hover{
+        background: linear-gradient(to left, #ff3300 0%, #ff0066 100%);        
+        color:white;
+        box-shadow: 0 15px 25px rgba(50, 50, 50, 0.15);
+        
+      }
+  </style>
+</head>
+<body>
+
+  <!-- Sign-up form start -->
+<div class = "flex-container">
+  <div class="container-1">
+  <h1>
+  Stay updated!
+  </h1>
+  <br>
+  <P>Join 60,000+ product managers receiving monthly updates on:</P>
+  <br>
+  <ol>
+  <li>Product discovery and building what matters</li>
+  <li>Measuring to ensure updates are a success</li>
+  <li>And much more!</li>
+  <br>
+  </ol>
+  
+  <form>
+<label for ='email'>Email Address</label>
+<br>
+<p class="error-message" id = "error-message"></p>
+<input type = "email" id="email" name ="email_address" placeholder="name@example.com">
+  </form>
+  <br>
+  
+
+  <button onClick = "handleEmail()">Subscribe to monthly newsletter</button>
+  <br>
+
+  
+  </div>
+  <div class="image">
+    <img class="svg" src="./assets/images/illustration-sign-up-desktop.svg" alt="desktop-signup">
+  </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Alex Willingham</a>.
+  </div>
+</body>
+</html>
